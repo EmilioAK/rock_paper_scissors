@@ -21,8 +21,8 @@
         }
 
         function playRound(playerSelection, computerSelection) {
-            player = playerSelection.toLowerCase()
-            computer = computerSelection.toLowerCase()
+            let player = playerSelection.toLowerCase()
+            let computer = computerSelection.toLowerCase()
 
             if (player === computer) {
                 return "Tie"
@@ -53,6 +53,10 @@
                         return "You Win! Scissors beat Paper"
                 }
             }
+        }
+
+        function game() {
+
         }
     </script>
 </body>
