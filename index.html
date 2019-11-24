@@ -24,8 +24,34 @@
             player = playerSelection.toLowerCase()
             computer = computerSelection.toLowerCase()
 
-            if (player == computer) {
+            if (player === computer) {
                 return "Tie"
+            } else if (player === "rock") {
+                switch (computer) {
+                    case "paper":
+                        return "You Lose! Paper beats Rock"
+                        break
+                    case "scissors":
+                        return "You Win! Rock beats Scissors"
+                        break
+                }
+            } else if (player == "paper") {
+                switch (computer) {
+                    case "scissors":
+                        return "You Lose! Scissors beat Rock"
+                        break
+                    case "rock":
+                        return "You Win! Paper breats Rock"
+                        break
+                }
+            } else if (player == "scissors") {
+                switch (computer) {
+                    case "rock":
+                        return "You Lose! Rock beats Scissors"
+                        break
+                    case "paper":
+                        return "You Win! Scissors beat Paper"
+                }
             }
         }
     </script>
