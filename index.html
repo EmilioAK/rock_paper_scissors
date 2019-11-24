@@ -19,6 +19,15 @@
                 return "Scissors"
             }
         }
+
+        function playRound(playerSelection, computerSelection) {
+            player = playerSelection.toLowerCase()
+            computer = computerSelection.toLowerCase()
+
+            if (player == computer) {
+                return "Tie"
+            }
+        }
     </script>
 </body>
 </html>
