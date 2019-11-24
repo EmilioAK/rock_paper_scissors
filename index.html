@@ -8,7 +8,18 @@
 </head>
 <body>
     <script>
-        
+        function computerPlay() {
+            let randomNumber = Math.random()
+            if (randomNumber <= (1/3)) {
+                return "Rock"
+            } else if (randomNumber > (2/3)) {
+                return "Paper"
+            // This is a number between 1/3 to 2/3
+            } else {
+                return "Scissors"
+            }
+        }
+    console.log(computerPlay())
     </script>
 </body>
 </html>
