@@ -4,8 +4,8 @@ function computerPlay() {
         return "Rock"
     } else if (randomNumber > (2/3)) {
         return "Paper"
-    // This is a number between 1/3 to 2/3
     } else {
+        // This is a number between 1/3 to 2/3
         return "Scissors"
     }
 }
