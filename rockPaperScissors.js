@@ -65,6 +65,7 @@ function game() {
     }
 
     if (playerScore > computerScore) {
+        // game() is run an odd number of times, so ties don't need to be accounted for
         console.log(`Player won with a score of ${playerScore}!`)
     } else {
         console.log(`Computer won with a score of ${computerScore}`)
