@@ -1,5 +1,7 @@
 function computerPlay() {
     const randomNumber = Math.random()
+    // A random number between 0 and 1
+
     if (randomNumber <= (1/3)) {
         return "Rock"
     } else if (randomNumber > (2/3)) {
