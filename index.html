@@ -8,9 +8,6 @@
 </head>
 <body>
     <script>
-        let playerScore = 0
-        let computerScore = 0
-
         function computerPlay() {
             const randomNumber = Math.random()
             if (randomNumber <= (1/3)) {
@@ -22,6 +19,9 @@
                 return "Scissors"
             }
         }
+
+        let playerScore = 0
+        let computerScore = 0
 
         function playRound(playerSelection, computerSelection) {
         // Increments the global scores and returns a sentence
