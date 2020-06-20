@@ -1,6 +1,8 @@
 # Rock, paper, scissors
 
-Played in the browsers console.
+~Played in the browsers console.~
+
+Now playable with buttons!
 
 From The Odin Project's [curriculum](https://www.theodinproject.com/courses/web-development-101/lessons/rock-paper-scissors). 
 
