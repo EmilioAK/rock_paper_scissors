@@ -58,18 +58,16 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-function game() {
-    for (let i = 0; i < 5; i++) {
-        const player = prompt("Rock, paper, or Scissors?")
-        const computer = computerPlay()
-        
-        console.log(playRound(player, computer))
-    }
+// buttons is a node list. It looks and acts much like an array.
+const buttons = document.querySelectorAll('button');
 
-    if (playerScore > computerScore) {
-        // game() is run an odd number of times, so ties don't need to be accounted for
-        console.log(`Player won with a score of ${playerScore}!`)
-    } else {
-        console.log(`Computer won with a score of ${computerScore}`)
-    }
-}
+// we use the .forEach method to iterate through each button
+buttons.forEach((button) => {
+
+  // and for each one we add a 'click' listener
+  button.addEventListener('click', () => {
+    alert(playRound(button.id, computerPlay()));
+    document.getElementById("yourScore").innerText = playerScore;
+    document.getElementById("computerScore").innerText = computerScore;
+  });
+});
